@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: sans-serif;
+  color: #79663E;
+}
+
+#main_cover_photo {
+  float: right;
+  height: 100vh;
+  width: 40%;
+}
+
+#icon_left_arrow {
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  right: 34.3%;
+}
+
+#icon_right_arrow {
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+}
+
+h2 {
+  font-size: .8rem;
+  margin-top: 4px;
+}
+
+#section_articles_8 {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#article_resume {
+  background-color: #F4D224;
+  height: 33.33vh;
+  width: 66.66%;
+}
+
+.article {
+  height: 33.33vh;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#article_profile {
+  background-color: #C9432E;
+  color: #2E4C30;
+}
+
+#article_experience {
+  background-color: #C9432E;
+  color: #2E4C30;;
+}
+
+#article_education {
+  background-color: #79663E;
+  color: black;
+}
+
+#article_travel {
+  background-color: #648E6A;
+}
+
+#article_adventure {
+  background-color: #2E4C30;
+}
+
+#article_camera {
+  background-color: #F4D224; 
+}
+
+#article_compensation {
+  background-color: #2E4C30;
+}
+
+
+
+
