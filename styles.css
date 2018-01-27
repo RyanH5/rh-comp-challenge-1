@@ -19,14 +19,14 @@ body {
   height: 34px;
   position: absolute;
   top: 50%;
-  right: 34.3%;
+  right: 35%;
 }
 
 #icon_right_arrow {
   height: 34px;
   position: absolute;
   top: 50%;
-  right: 3%;
+  right: 2%;
 }
 
 h2 {
@@ -44,6 +44,12 @@ h2 {
   background-color: #F4D224;
   height: 33.33vh;
   width: 66.66%;
+  padding: 8% 6% 4%;
+}
+
+h1 {
+  margin: 2% 0%;
+  font-size: 1.5rem;
 }
 
 .article {
@@ -85,6 +91,13 @@ h2 {
 
 #article_compensation {
   background-color: #2E4C30;
+}
+
+#article_compensation:hover {
+  background-image: url(images/breaking-bad-money.gif);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
