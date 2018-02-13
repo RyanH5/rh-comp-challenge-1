@@ -7,26 +7,43 @@ body {
   width: 100%;
   font-family: sans-serif;
   color: #79663E;
+  background-color: lightgray;
 }
 
-#main_cover_photo {
+#section_cover_photo {
   float: right;
   height: 100vh;
   width: 40%;
+  background-image: url(images/tallest-trees.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+#section_cover_photo:hover {
+  background-image: url(images/Optimized-yellowstone.jpg);
+  background-size: cover;
+  background-position-x: center;
+}
+
+#three_dots {
+  height: 46px;
+  right: 25px;
+  top: 2px;
+  position: absolute;
 }
 
 #icon_left_arrow {
-  height: 34px;
-  position: absolute;
-  top: 50%;
-  right: 35%;
+  height: 46px;
+  pointer-events: auto;
 }
 
 #icon_right_arrow {
-  height: 34px;
-  position: absolute;
-  top: 50%;
-  right: 2%;
+  height: 46px;
+  pointer-events: auto;
 }
 
 h2 {
@@ -41,10 +58,37 @@ h2 {
 }
 
 #article_resume {
-  background-color: #F4D224;
+  background-color: #2E4C30;
   height: 33.33vh;
   width: 66.66%;
-  padding: 8% 6% 4%;
+  padding: 4% 6% 3%;
+}
+
+#article_resume:hover {
+  background-color: #2e4c304f;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #79663E;
+  padding: 6px 12px 5px;
+  font-size: .9rem;
+  text-align: center;
+  margin: 13px 10px 0px 0px;
+  color: #79663e;
+}
+
+#icon_resume {
+  height: 25px;
+  vertical-align: sub;
+  padding: 5px 7px 3px;
+}
+
+#icon_contact {
+  height: 25px;
+  padding: 4px 6px;
+  vertical-align: bottom;
+  
 }
 
 h1 {
@@ -67,9 +111,46 @@ h1 {
   color: #2E4C30;
 }
 
+#icon_profile {
+  height: 50px;
+}
+
+#article_profile:hover {
+    background-image: url(images/Optimized-monkey-upclose.jpg);
+    background-size: cover;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+
+#article_profile:hover > h2 {
+  display: none;
+}
+
+#article_profile:hover > #icon_profile {
+  display: none;
+}
+
 #article_experience {
-  background-color: #C9432E;
-  color: #2E4C30;;
+  background-color: #F4D224; 
+  color: #2E4C30;
+}
+
+#icon_experience {
+  height: 50px;
+}
+
+#article_experience:hover {
+  background-image: url(images/Optimized-rappel-dark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+
+#article_experience:hover > h2 {
+  display: none;
+}
+
+#article_experience:hover > #icon_experience {
+  display: none;
 }
 
 #article_education {
@@ -77,28 +158,173 @@ h1 {
   color: black;
 }
 
+#icon_education {
+  height: 50px;
+}
+
+/*#container:hover > #cube { background-color: yellow; }*/
+#article_education:hover {
+  background-image: url(images/Optimized-bee-keeper.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right; 
+} 
+
+#article_education:hover > h2 {
+  display: none;
+}
+
+#article_education:hover > #icon_education {
+  display: none;
+}
+
 #article_travel {
   background-color: #648E6A;
+}
+
+#icon_travel {
+  height: 50px;
+}
+
+#article_travel:hover {
+  background-image: url(images/Optimized-day-of-dead.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right; 
+}
+
+#article_travel:hover > h2 {
+  display: none;
+}
+
+#article_travel:hover > #icon_travel {
+  display: none;
 }
 
 #article_adventure {
   background-color: #2E4C30;
 }
 
+#icon_adventure {
+  height: 50px;
+}
+
+#article_adventure:hover {
+  background-image: url(images/Optimized-jaguar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+#article_adventure:hover > h2 {
+  display: none;
+}
+
+#article_adventure:hover > #icon_adventure {
+  display: none;
+}
+
 #article_camera {
   background-color: #F4D224; 
 }
 
+#icon_camera {
+  height: 50px;
+}
+
+#article_camera:hover {
+  background-image: url(images/Optimized-walrus.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#article_camera:hover > h2 {
+  display: none;
+}
+
+#article_camera:hover > #icon_camera {
+  display: none;
+}
+
 #article_compensation {
-  background-color: #2E4C30;
+  background-color: #C9432E;
+}
+
+#icon_compensation {
+  height: 50px;
 }
 
 #article_compensation:hover {
   background-image: url(images/breaking-bad-money.gif);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+#article_compensation:hover > h2 {
+  display: none;
+}
+
+#article_compensation:hover > #icon_compensation {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  #section_cover_photo {
+    width: 50%;
+    background-image: url(images/nat-geo-small-min.jpg);
+  }
+
+  #section_articles_8 {
+    width: 50%;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  #article_resume {
+    width: 100%;
+    height: 27vh;
+  }
+
+  .article {
+    width: 50%;
+    height: 25vh;
+
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #section_cover_photo {
+    width: 100%;
+    height: 85vh;
+  }
+  #section_articles_8 {
+  overflow-y: visible;
+  }
+
+  #article_resume {
+    height: 33vh;
+    width: 100%;
+  }
+
+ /* button {
+    margin: 15px auto;
+    display: block;
+  }*/
+
+  #section_articles_8 {
+    width: 100%;
+  }
+
+  .article {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+
+
 
 
 
